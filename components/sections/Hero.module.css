@@ -28,6 +28,7 @@
   display: inline-flex;
   align-items: center;
   gap: 9px;
+  max-width: 100%;
   font-family: var(--mono);
   font-size: 12.5px;
   color: var(--muted);
@@ -38,7 +39,13 @@
   background: var(--surface);
 }
 
+.badgeText {
+  min-width: 0;
+  white-space: normal;
+}
+
 .dot {
+  flex: none;
   width: 8px;
   height: 8px;
   border-radius: 50%;
@@ -169,6 +176,22 @@
   }
   50% {
     transform: translateY(6px);
+  }
+}
+
+@media (max-width: 480px) {
+  .hero {
+    padding: 40px 0 76px;
+  }
+  .status {
+    font-size: 11.5px;
+    padding: 5px 12px;
+  }
+  .lede {
+    font-size: 1.02rem;
+  }
+  .btn {
+    padding: 10px 15px;
   }
 }
 

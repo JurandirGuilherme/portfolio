@@ -126,6 +126,12 @@ button {
   width: 100%;
 }
 
+@media (max-width: 480px) {
+  .wrap {
+    padding: 0 20px;
+  }
+}
+
 .label {
   font-family: var(--mono);
   font-size: 12px;

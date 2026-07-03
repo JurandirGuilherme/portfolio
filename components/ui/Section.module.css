@@ -15,3 +15,12 @@
   height: 1px;
   background: var(--line);
 }
+
+@media (max-width: 600px) {
+  .section {
+    padding: 48px 0;
+  }
+  .head {
+    margin-bottom: 26px;
+  }
+}

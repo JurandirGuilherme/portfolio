@@ -14,7 +14,7 @@ export function Hero() {
       <div className={`wrap ${styles.content}`}>
         <span className={styles.status}>
           <span className={styles.dot} />
-          {t.statusBadge}
+          <span className={styles.badgeText}>{t.statusBadge}</span>
         </span>
         <h1 className={styles.name}>{site.name}</h1>
         <p className={styles.role}>
