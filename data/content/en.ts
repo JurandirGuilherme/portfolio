@@ -133,7 +133,7 @@ export const en: Content = {
   },
 
   footer:
-    "© 2026 Jurandir Guilherme · Built with Next.js, TypeScript and attention to detail.",
+    "© 2026 Jurandir Guilherme · Built with Next.js · open source on GitHub.",
 
   ui: {
     nav: {

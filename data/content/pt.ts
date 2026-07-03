@@ -139,7 +139,7 @@ export const pt: Content = {
   },
 
   footer:
-    "© 2026 Jurandir Guilherme · Feito com Next.js, TypeScript e atenção aos detalhes.",
+    "© 2026 Jurandir Guilherme · Feito com Next.js · código aberto no GitHub.",
 
   ui: {
     nav: {
