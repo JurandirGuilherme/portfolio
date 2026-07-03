@@ -3,6 +3,11 @@
 <p align="center"><strong>Desenvolvedor Front-End React</strong> · Next.js · TypeScript</p>
 
 <p align="center">
+  <a href="https://guibatista.dev"><img src="https://img.shields.io/badge/ao%20vivo-guibatista.dev-E4572E?style=for-the-badge&logo=vercel&logoColor=white" alt="Ao vivo em guibatista.dev" /></a>
+</p>
+
+<p align="center">
+  <a href="https://guibatista.dev">Site</a> ·
   <a href="https://linkedin.com/in/jurandirguilherme">LinkedIn</a> ·
   <a href="https://github.com/JurandirGuilherme">GitHub</a> ·
   <a href="mailto:jurandirguilherme1@gmail.com">E-mail</a>
