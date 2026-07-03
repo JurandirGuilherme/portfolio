@@ -1,10 +1,17 @@
-import { navLinks, profile } from "@/data/profile";
+"use client";
+
+import { site } from "@/data/site";
+import { NAV_SECTIONS } from "@/lib/i18n/sections";
+import { useLanguage } from "@/lib/i18n/useLanguage";
 import { ThemeToggle } from "@/components/ui/ThemeToggle";
+import { LanguageToggle } from "@/components/ui/LanguageToggle";
 import styles from "./Navbar.module.css";
 
-const [brandName, brandTld] = profile.brand.split(".");
+const [brandName, brandTld] = site.brand.split(".");
 
 export function Navbar() {
+  const { t } = useLanguage();
+
   return (
     <nav className={styles.nav}>
       <div className={`wrap ${styles.inner}`}>
@@ -13,20 +20,21 @@ export function Navbar() {
           <b>.{brandTld}</b>
         </a>
         <div className={styles.links}>
-          {navLinks.map((link) => (
+          {NAV_SECTIONS.map((section) => (
             <a
-              key={link.href}
-              href={link.href}
+              key={section.id}
+              href={`#${section.id}`}
               className={[
-                link.hideable ? styles.hideable : "",
-                link.highlight ? styles.contact : "",
+                section.hideable ? styles.hideable : "",
+                section.highlight ? styles.contact : "",
               ]
                 .filter(Boolean)
                 .join(" ")}
             >
-              {link.label}
+              {t.ui.nav[section.id]}
             </a>
           ))}
+          <LanguageToggle />
           <ThemeToggle />
         </div>
       </div>

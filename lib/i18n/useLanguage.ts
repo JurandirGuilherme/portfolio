@@ -1,0 +1,12 @@
+"use client";
+
+import { useContext } from "react";
+import { LanguageContext, type LanguageContextValue } from "./LanguageProvider";
+
+export function useLanguage(): LanguageContextValue {
+  const ctx = useContext(LanguageContext);
+  if (!ctx) {
+    throw new Error("useLanguage deve ser usado dentro de <LanguageProvider>");
+  }
+  return ctx;
+}

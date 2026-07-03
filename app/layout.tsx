@@ -1,14 +1,17 @@
 import type { Metadata, Viewport } from "next";
 import { ThemeProvider } from "@/components/ui/ThemeProvider";
-import { profile } from "@/data/profile";
+import { LanguageProvider } from "@/lib/i18n/LanguageProvider";
+import { site } from "@/data/site";
+import { pt } from "@/data/content/pt";
 import "./globals.css";
 
-const url = `https://${profile.brand}`;
-const description = profile.lede;
+const url = `https://${site.brand}`;
+const description = pt.lede;
+const title = `${site.name} — ${pt.role}`;
 
 export const metadata: Metadata = {
   metadataBase: new URL(url),
-  title: `${profile.name} — ${profile.role}`,
+  title,
   description,
   keywords: [
     "React",
@@ -16,22 +19,22 @@ export const metadata: Metadata = {
     "TypeScript",
     "Front-End",
     "Desenvolvedor",
-    profile.name,
+    site.name,
   ],
-  authors: [{ name: profile.name, url }],
-  creator: profile.name,
+  authors: [{ name: site.name, url }],
+  creator: site.name,
   alternates: { canonical: "/" },
   openGraph: {
     type: "website",
     locale: "pt_BR",
     url,
-    siteName: profile.brand,
-    title: `${profile.name} — ${profile.role}`,
+    siteName: site.brand,
+    title,
     description,
   },
   twitter: {
     card: "summary_large_image",
-    title: `${profile.name} — ${profile.role}`,
+    title,
     description,
   },
 };
@@ -51,7 +54,9 @@ export default function RootLayout({
   return (
     <html lang="pt-BR" suppressHydrationWarning>
       <body>
-        <ThemeProvider>{children}</ThemeProvider>
+        <ThemeProvider>
+          <LanguageProvider>{children}</LanguageProvider>
+        </ThemeProvider>
       </body>
     </html>
   );

@@ -1,14 +1,18 @@
-import { profile } from "@/data/profile";
+"use client";
+
+import { useLanguage } from "@/lib/i18n/useLanguage";
 import { Section } from "@/components/ui/Section";
 import { Reveal } from "@/components/ui/Reveal";
 import { renderBold } from "@/lib/richText";
 import styles from "./Experience.module.css";
 
 export function Experience() {
+  const { t } = useLanguage();
+
   return (
-    <Section id="experiencia" label="Experiência">
+    <Section id="experiencia" label={t.ui.nav.experiencia}>
       <div className={styles.timeline}>
-        {profile.experience.map((job) => (
+        {t.experience.map((job) => (
           <Reveal key={`${job.org}-${job.period}`} className={styles.job}>
             <div className={`${styles.when} ${job.current ? styles.now : ""}`}>
               {job.period}

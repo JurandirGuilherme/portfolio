@@ -1,11 +1,8 @@
-export interface NavLink {
-  href: string;
-  label: string;
-  /** Realça o link (ex.: contato) */
-  highlight?: boolean;
-  /** Esconde em telas pequenas */
-  hideable?: boolean;
-}
+export type Lang = "pt" | "en";
+
+/** Âncoras estáveis das seções (não mudam com o idioma). */
+export type SectionId =
+  "sobre" | "stack" | "experiencia" | "projetos" | "contato";
 
 export interface Stat {
   value: string;
@@ -34,27 +31,39 @@ export interface Project {
   techs: string[];
   /** Destaca o badge como conquista */
   highlight?: boolean;
-  /** Link opcional (repositório ou deploy) */
-  href?: string;
 }
 
-export interface Profile {
+/** Dados fixos, independentes de idioma. */
+export interface Site {
   name: string;
   brand: string;
-  role: string;
-  statusBadge: string;
-  lede: string;
   email: string;
   github: string;
   linkedin: string;
+}
+
+/** Textos de interface (rótulos) por idioma. */
+export interface UiStrings {
+  /** Rótulos dos links / cabeçalhos de seção */
+  nav: Record<SectionId, string>;
+  getInTouch: string;
+  scrollCue: string;
+  sendEmail: string;
+  theme: { light: string; dark: string; fallback: string };
+  language: string;
+}
+
+/** Todo o conteúdo traduzível de um idioma. */
+export interface Content {
+  role: string;
+  statusBadge: string;
+  lede: string;
   about: string[];
   stats: Stat[];
   stack: SkillGroup[];
   experience: Job[];
   projects: Project[];
-  contact: {
-    heading: string;
-    text: string;
-  };
+  contact: { heading: string; text: string };
   footer: string;
+  ui: UiStrings;
 }

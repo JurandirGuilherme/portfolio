@@ -1,22 +1,9 @@
-import type { NavLink, Profile } from "@/types";
+import type { Content } from "@/types";
 
-export const navLinks: NavLink[] = [
-  { href: "#sobre", label: "sobre", hideable: true },
-  { href: "#stack", label: "stack", hideable: true },
-  { href: "#experiencia", label: "experiência", hideable: true },
-  { href: "#projetos", label: "projetos", hideable: true },
-  { href: "#contato", label: "contato", highlight: true },
-];
-
-export const profile: Profile = {
-  name: "Jurandir Guilherme",
-  brand: "guibatista.dev",
+export const pt: Content = {
   role: "Desenvolvedor Front-End React",
   statusBadge: "Front-End React · Remoto · Paulista, PE — Brasil",
   lede: "Construo interfaces web e mobile com React, Next.js e TypeScript — do protótipo à produção, com foco em componentes reutilizáveis, performance e boa experiência de uso.",
-  email: "jurandirguilherme1@gmail.com",
-  github: "https://github.com/JurandirGuilherme",
-  linkedin: "https://linkedin.com/in/jurandirguilherme",
 
   about: [
     "Sou desenvolvedor front-end com mais de 4 anos em desenvolvimento web e mais de 2 anos construindo aplicações em produção com React.js, Next.js, React Native (Expo) e TypeScript.",
@@ -143,4 +130,19 @@ export const profile: Profile = {
 
   footer:
     "© 2026 Jurandir Guilherme · Desenvolvido com React na cabeça e HTML no capricho.",
+
+  ui: {
+    nav: {
+      sobre: "sobre",
+      stack: "stack",
+      experiencia: "experiência",
+      projetos: "projetos",
+      contato: "contato",
+    },
+    getInTouch: "Entrar em contato",
+    scrollCue: "sobre",
+    sendEmail: "Enviar e-mail",
+    theme: { light: "claro", dark: "escuro", fallback: "tema" },
+    language: "Mudar idioma para inglês",
+  },
 };

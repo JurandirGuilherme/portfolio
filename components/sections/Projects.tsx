@@ -1,13 +1,17 @@
-import { profile } from "@/data/profile";
+"use client";
+
+import { useLanguage } from "@/lib/i18n/useLanguage";
 import { Section } from "@/components/ui/Section";
 import { Reveal } from "@/components/ui/Reveal";
 import styles from "./Projects.module.css";
 
 export function Projects() {
+  const { t } = useLanguage();
+
   return (
-    <Section id="projetos" label="Projetos">
+    <Section id="projetos" label={t.ui.nav.projetos}>
       <div className={styles.grid}>
-        {profile.projects.map((project) => (
+        {t.projects.map((project) => (
           <Reveal key={project.title} as="article" className={styles.card}>
             <span
               className={`${styles.badge} ${project.highlight ? styles.win : ""}`}
