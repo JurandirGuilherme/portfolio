@@ -133,7 +133,7 @@ export const en: Content = {
   },
 
   footer:
-    "© 2026 Jurandir Guilherme · Built with React in mind and HTML crafted with care.",
+    "© 2026 Jurandir Guilherme · Built with Next.js, TypeScript and attention to detail.",
 
   ui: {
     nav: {
