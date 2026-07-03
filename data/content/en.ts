@@ -96,7 +96,7 @@ export const en: Content = {
       links: [
         {
           label: "Livestream",
-          href: "https://www.youtube.com/watch?v=c-MxZ_-stpo",
+          href: "https://youtu.be/c-MxZ_-stpo?t=726",
         },
         {
           label: "LinkedIn",
