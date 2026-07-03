@@ -67,7 +67,7 @@ export const en: Content = {
     {
       period: "2022 — 2025",
       role: "N1 Support & Development",
-      org: "M. I. Montreal Informática",
+      org: "Montreal Informática",
       bullets: [
         "**Winner of the internal Maratonas de Ideias Hackathon 2023**, with a process-optimization solution.",
         "Contributed to a document-control system with React (Next.js), **TypeScript, Node.js and PostgreSQL**, plus Tailwind CSS and Ant Design.",
@@ -90,7 +90,7 @@ export const en: Content = {
       badge: "★ 1st Place",
       title: "Maratonas de Ideias Hackathon 2023",
       description:
-        "Winning solution focused on process optimization at M.I. Montreal's internal hackathon, built as a team under time pressure — from idea to working prototype.",
+        "Winning solution focused on process optimization at Montreal Informática's internal hackathon, built as a team under time pressure — from idea to working prototype.",
       techs: ["Problem-solving", "Prototyping", "Teamwork"],
       highlight: true,
       links: [

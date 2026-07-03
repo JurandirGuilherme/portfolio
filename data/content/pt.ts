@@ -73,7 +73,7 @@ export const pt: Content = {
     {
       period: "2022 — 2025",
       role: "Suporte N1 & Desenvolvimento",
-      org: "M. I. Montreal Informática",
+      org: "Montreal Informática",
       bullets: [
         "**Vencedor do hackathon interno Maratonas de Ideias 2023**, com uma solução de otimização de processos.",
         "Colaborei em um sistema de controle de documentos com React (Next.js), **TypeScript, Node.js e PostgreSQL**, além de Tailwind CSS e Ant Design.",
@@ -96,7 +96,7 @@ export const pt: Content = {
       badge: "★ 1º Lugar",
       title: "Hackathon Maratonas de Ideias 2023",
       description:
-        "Solução vencedora focada em otimização de processos no hackathon interno da M.I. Montreal, desenvolvida em equipe sob pressão de tempo — da ideia ao protótipo funcional.",
+        "Solução vencedora focada em otimização de processos no hackathon interno da Montreal Informática, desenvolvida em equipe sob pressão de tempo — da ideia ao protótipo funcional.",
       techs: ["Resolução de problemas", "Prototipagem", "Trabalho em equipe"],
       highlight: true,
       links: [
