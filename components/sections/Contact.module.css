@@ -1,0 +1,88 @@
+.contact {
+  padding: 68px 0;
+  text-align: center;
+}
+
+.label {
+  display: block;
+  margin-bottom: 18px;
+}
+
+.heading {
+  font-size: clamp(1.8rem, 5vw, 2.8rem);
+  font-weight: 800;
+  letter-spacing: -0.03em;
+  margin: 0 0 14px;
+  text-wrap: balance;
+}
+
+.text {
+  color: var(--muted);
+  max-width: 52ch;
+  margin: 0 auto 30px;
+  font-size: 1.1rem;
+}
+
+.mail {
+  font-family: var(--mono);
+  font-size: clamp(1rem, 3vw, 1.5rem);
+  color: var(--accent);
+  text-decoration: none;
+  font-weight: 600;
+  border-bottom: 2px solid transparent;
+  transition: border-color 0.18s;
+}
+
+.mail:hover {
+  border-color: var(--accent);
+}
+
+.links {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+  justify-content: center;
+  margin-top: 28px;
+}
+
+.btn {
+  font-family: var(--mono);
+  font-size: 13.5px;
+  text-decoration: none;
+  font-weight: 600;
+  padding: 11px 18px;
+  border-radius: 8px;
+  transition:
+    transform 0.16s,
+    border-color 0.18s,
+    color 0.18s;
+  border: 1px solid transparent;
+}
+
+.ghost {
+  border-color: var(--line);
+  color: var(--ink);
+  background: var(--surface);
+}
+
+.ghost:hover {
+  border-color: var(--accent);
+  color: var(--accent);
+  transform: translateY(-2px);
+}
+
+.primary {
+  background: var(--accent);
+  color: #fff;
+}
+
+.primary:hover {
+  transform: translateY(-2px);
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .ghost:hover,
+  .primary:hover {
+    transform: none;
+  }
+}

@@ -1,0 +1,61 @@
+.timeline {
+  display: grid;
+  gap: 4px;
+}
+
+.job {
+  display: grid;
+  grid-template-columns: 160px 1fr;
+  gap: 28px;
+  padding: 26px 0;
+  border-top: 1px solid var(--line);
+}
+
+.job:first-child {
+  border-top: none;
+}
+
+.when {
+  font-family: var(--mono);
+  font-size: 13px;
+  color: var(--faint);
+  padding-top: 4px;
+}
+
+.now {
+  color: var(--accent);
+}
+
+.title {
+  margin: 0;
+  font-size: 1.2rem;
+  font-weight: 700;
+  letter-spacing: -0.01em;
+}
+
+.org {
+  color: var(--support);
+  font-weight: 600;
+}
+
+.bullets {
+  margin: 12px 0 0;
+  padding-left: 18px;
+  color: var(--muted);
+}
+
+.bullets li {
+  margin-bottom: 7px;
+}
+
+.bullets strong {
+  color: var(--ink);
+  font-weight: 600;
+}
+
+@media (max-width: 680px) {
+  .job {
+    grid-template-columns: 1fr;
+    gap: 8px;
+  }
+}

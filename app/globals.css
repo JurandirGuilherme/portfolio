@@ -1,0 +1,136 @@
+/* ==========================================================================
+   Design tokens + base — portfólio Jurandir Guilherme
+   Tema controlado por next-themes via attribute="data-theme".
+   Camadas: :root (light) → @media dark → [data-theme] (override manual).
+   ========================================================================== */
+
+:root {
+  --bg: #f3f5f6;
+  --surface: #ffffff;
+  --surface-2: #fafbfb;
+  --ink: #14212b;
+  --muted: #566068;
+  --faint: #8a959b;
+  --line: #e2e7e9;
+  --accent: #e4572e;
+  --accent-ink: #c7431f;
+  --support: #1f7a8c;
+  --ok: #2e9e6b;
+
+  --mono:
+    ui-monospace, "SF Mono", "JetBrains Mono", "Cascadia Code", Menlo, Consolas,
+    monospace;
+  --sans: "Helvetica Neue", "Segoe UI", system-ui, Arial, sans-serif;
+  --maxw: 1040px;
+  --nav-h: 60px;
+}
+
+/* Preferência do sistema (quando o usuário não escolheu manualmente) */
+@media (prefers-color-scheme: dark) {
+  :root {
+    --bg: #0f1a20;
+    --surface: #16242c;
+    --surface-2: #132029;
+    --ink: #eaf0f1;
+    --muted: #9baab1;
+    --faint: #6e7e86;
+    --line: #26363e;
+    --accent: #ff7a5c;
+    --accent-ink: #ff8b70;
+    --support: #57b0c1;
+    --ok: #4fc08d;
+  }
+}
+
+/* Override manual (next-themes escreve data-theme no <html>) */
+:root[data-theme="light"] {
+  --bg: #f3f5f6;
+  --surface: #ffffff;
+  --surface-2: #fafbfb;
+  --ink: #14212b;
+  --muted: #566068;
+  --faint: #8a959b;
+  --line: #e2e7e9;
+  --accent: #e4572e;
+  --accent-ink: #c7431f;
+  --support: #1f7a8c;
+  --ok: #2e9e6b;
+}
+
+:root[data-theme="dark"] {
+  --bg: #0f1a20;
+  --surface: #16242c;
+  --surface-2: #132029;
+  --ink: #eaf0f1;
+  --muted: #9baab1;
+  --faint: #6e7e86;
+  --line: #26363e;
+  --accent: #ff7a5c;
+  --accent-ink: #ff8b70;
+  --support: #57b0c1;
+  --ok: #4fc08d;
+}
+
+/* Reset enxuto */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
+}
+
+body {
+  margin: 0;
+  background: var(--bg);
+  color: var(--ink);
+  font-family: var(--sans);
+  line-height: 1.6;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  text-rendering: optimizeLegibility;
+}
+
+a {
+  color: inherit;
+}
+
+img {
+  max-width: 100%;
+  display: block;
+}
+
+button {
+  font: inherit;
+}
+
+:focus-visible {
+  outline: 2px solid var(--accent);
+  outline-offset: 3px;
+  border-radius: 3px;
+}
+
+/* Utilitários compartilhados */
+.wrap {
+  max-width: var(--maxw);
+  margin: 0 auto;
+  padding: 0 24px;
+  width: 100%;
+}
+
+.label {
+  font-family: var(--mono);
+  font-size: 12px;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  color: var(--accent);
+  font-weight: 600;
+}
