@@ -133,7 +133,7 @@ export const en: Content = {
   },
 
   footer:
-    "© 2026 Jurandir Guilherme · Built with Next.js · open source on GitHub.",
+    "© 2026 Jurandir Guilherme · Off-hours: the mats, chess and a new language. In code: Next.js.",
 
   ui: {
     nav: {
