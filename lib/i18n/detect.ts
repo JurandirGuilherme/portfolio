@@ -6,8 +6,8 @@ function isLang(value: string | null): value is Lang {
 }
 
 /**
- * Idioma inicial: preferência salva → idioma do navegador → padrão (pt).
- * `en-*` vira "en"; qualquer outro cai no padrão.
+ * Idioma inicial: preferência salva → idioma do navegador → padrão (en).
+ * `pt-*` vira "pt"; qualquer outro cai no padrão (inglês).
  */
 export function detectLang(): Lang {
   if (typeof window === "undefined") return DEFAULT_LANG;
@@ -20,6 +20,6 @@ export function detectLang(): Lang {
   }
 
   const nav = window.navigator.language?.toLowerCase() ?? "";
-  if (nav.startsWith("en")) return "en";
+  if (nav.startsWith("pt")) return "pt";
   return DEFAULT_LANG;
 }

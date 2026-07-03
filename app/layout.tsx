@@ -2,12 +2,12 @@ import type { Metadata, Viewport } from "next";
 import { ThemeProvider } from "@/components/ui/ThemeProvider";
 import { LanguageProvider } from "@/lib/i18n/LanguageProvider";
 import { site } from "@/data/site";
-import { pt } from "@/data/content/pt";
+import { en } from "@/data/content/en";
 import "./globals.css";
 
 const url = `https://${site.brand}`;
-const description = pt.lede;
-const title = `${site.name} — ${pt.role}`;
+const description = en.lede;
+const title = `${site.name} — ${en.role}`;
 
 export const metadata: Metadata = {
   metadataBase: new URL(url),
@@ -18,7 +18,7 @@ export const metadata: Metadata = {
     "Next.js",
     "TypeScript",
     "Front-End",
-    "Desenvolvedor",
+    "Developer",
     site.name,
   ],
   authors: [{ name: site.name, url }],
@@ -26,7 +26,7 @@ export const metadata: Metadata = {
   alternates: { canonical: "/" },
   openGraph: {
     type: "website",
-    locale: "pt_BR",
+    locale: "en_US",
     url,
     siteName: site.brand,
     title,
@@ -52,7 +52,7 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="pt-BR" suppressHydrationWarning>
+    <html lang="en-US" suppressHydrationWarning>
       <body>
         <ThemeProvider>
           <LanguageProvider>{children}</LanguageProvider>

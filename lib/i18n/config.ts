@@ -1,7 +1,7 @@
 import type { Lang } from "@/types";
 
-export const LANGS: Lang[] = ["pt", "en"];
-export const DEFAULT_LANG: Lang = "pt";
+export const LANGS: Lang[] = ["en", "pt"];
+export const DEFAULT_LANG: Lang = "en";
 export const STORAGE_KEY = "portfolio-lang";
 
 /** Mapa Lang → atributo `lang` do HTML. */
