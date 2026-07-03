@@ -31,6 +31,13 @@ export interface Project {
   techs: string[];
   /** Destaca o badge como conquista */
   highlight?: boolean;
+  /** Links de comprovação (transmissão, post, repositório, deploy…) */
+  links?: ProjectLink[];
+}
+
+export interface ProjectLink {
+  label: string;
+  href: string;
 }
 
 /** Dados fixos, independentes de idioma. */

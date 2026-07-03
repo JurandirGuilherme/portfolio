@@ -96,9 +96,19 @@ export const pt: Content = {
       badge: "★ 1º Lugar",
       title: "Hackathon Maratonas de Ideias 2023",
       description:
-        "Solução vencedora focada em otimização de processos, desenvolvida em equipe sob pressão de tempo — da ideia ao protótipo funcional.",
+        "Solução vencedora focada em otimização de processos no hackathon interno da M.I. Montreal, desenvolvida em equipe sob pressão de tempo — da ideia ao protótipo funcional.",
       techs: ["Resolução de problemas", "Prototipagem", "Trabalho em equipe"],
       highlight: true,
+      links: [
+        {
+          label: "Transmissão",
+          href: "https://www.youtube.com/watch?v=c-MxZ_-stpo",
+        },
+        {
+          label: "LinkedIn",
+          href: "https://www.linkedin.com/feed/update/urn:li:activity:7153102827358203904/",
+        },
+      ],
     },
     {
       badge: "Aplicação em produção",

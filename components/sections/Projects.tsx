@@ -25,6 +25,21 @@ export function Projects() {
                 <span key={tech}>{tech}</span>
               ))}
             </div>
+            {project.links && project.links.length > 0 && (
+              <div className={styles.links}>
+                {project.links.map((link) => (
+                  <a
+                    key={link.href}
+                    className={styles.link}
+                    href={link.href}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    {link.label} ↗
+                  </a>
+                ))}
+              </div>
+            )}
           </Reveal>
         ))}
       </div>

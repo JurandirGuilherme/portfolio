@@ -90,9 +90,19 @@ export const en: Content = {
       badge: "★ 1st Place",
       title: "Maratonas de Ideias Hackathon 2023",
       description:
-        "Winning solution focused on process optimization, built as a team under time pressure — from idea to working prototype.",
+        "Winning solution focused on process optimization at M.I. Montreal's internal hackathon, built as a team under time pressure — from idea to working prototype.",
       techs: ["Problem-solving", "Prototyping", "Teamwork"],
       highlight: true,
+      links: [
+        {
+          label: "Livestream",
+          href: "https://www.youtube.com/watch?v=c-MxZ_-stpo",
+        },
+        {
+          label: "LinkedIn",
+          href: "https://www.linkedin.com/feed/update/urn:li:activity:7153102827358203904/",
+        },
+      ],
     },
     {
       badge: "Production app",
