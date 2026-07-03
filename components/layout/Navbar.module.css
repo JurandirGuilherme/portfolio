@@ -46,8 +46,22 @@
   color: var(--ink);
 }
 
-.contact {
-  color: var(--accent) !important;
+/* CTA de contato como mini-botão (não parece estado "ativo") */
+.links a.contact {
+  color: var(--accent);
+  border: 1px solid color-mix(in srgb, var(--accent) 50%, var(--line));
+  border-radius: 999px;
+  padding: 5px 13px;
+  transition:
+    color 0.18s,
+    background 0.18s,
+    border-color 0.18s;
+}
+
+.links a.contact:hover {
+  color: #fff;
+  background: var(--accent);
+  border-color: var(--accent);
 }
 
 @media (max-width: 720px) {
