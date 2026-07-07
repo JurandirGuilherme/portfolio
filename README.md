@@ -26,10 +26,11 @@ web e mobile com React, Next.js e TypeScript, do protótipo à produção.
 - 📱 **100% responsivo** — do celular ao desktop, com menu que vira hambúrguer no mobile
 - ♿ **Acessível** — navegação por teclado, foco visível e respeito a `prefers-reduced-motion`
 - ⚡ **SEO** pela Metadata API do Next (Open Graph, Twitter, canonical)
+- ✅ **Testado** — Vitest + Testing Library (unitários e de integração), rodando no CI
 
 ## 🛠️ Stack
 
-`Next.js 16 (App Router)` · `React 19` · `TypeScript` · `CSS Modules` · `next-themes`
+`Next.js 16 (App Router)` · `React 19` · `TypeScript` · `CSS Modules` · `next-themes` · `Vitest` · `Testing Library`
 
 Sem framework de CSS nem web fonts externas — fundamentos bem aplicados, com o
 conteúdo separado da interface (uma fonte de dados por idioma).
